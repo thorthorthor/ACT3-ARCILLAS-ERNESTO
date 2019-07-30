@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, .7)
+}
+
+header{
+    font-family: 'Pacifico', cursive;
+    background: #6a24a7;
+    color: white;
+    padding: 8px 20px;
+}
+
+.bg-gradient{
+    background: #DA22FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-gap: 10px;
+}
+
+.hero{
+    padding: 20px;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.hero button{
+    border: 1px solid white;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 100px;
+    background: transparent;
+    color: white;
+    outline: none;
+    transition: .25s background ease-in-out;
+}
+
+.hero button:disabled{
+    background: rgba(255, 255, 255, .7)
+}
+
+#jokes-list{
+    list-style: none;
+    padding: 0;
+}
+
+#status-container{
+    border-radius: 10px;
+    border: 1px solid purple;
+    padding: 20px; 
+    height: 10vh;
+}
+
+#reaction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid purple;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    max-height: 20vh;
+    padding: 20px;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    min-height: 100px;
+    max-height: auto;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+}
+
+#reaction img{
+    width: 300px;
+    min-height: 150px;
+    max-height: auto;
+    float: left;
+    margin: 3px;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+#reaction p {
+    font-weight: bold;
+}
+
